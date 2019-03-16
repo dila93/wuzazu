@@ -1,44 +1,46 @@
 # wuzazu
 Game of drones
 
-# Guía de instalación
-## Requerimientos
+# Installation Guide
+## Requirements
 
-Herramientas a tener preinstaladas:
+Tools to have preinstalled:
 1. npm, nodejs, mongodb, nodemon, webpack
-2. Clonar el proyecto de github
-3. Dentro de la carpeta instalar los modulos de npm con `sudo npm i --save`
+2. Clone the github project
+3. Inside the project folder install the npm modules with `sudo npm i --save`
 
-## Ejecutar el proyecto
+## Run the project
 
-El proyecto se pude ejecutar de varias formas, para ejecutarlo también hace falta estar en la consola dentro de la carpeta del proyecto
+The project could be executed in various ways, to run it you also need to be in the console/terminal inside the project folder.
 
-### forma 1:
+### way 1 (recommended by simple):
 
 `npm run webmon`
 
-> Esto ejecuta el servicio de mongo, renderiza react y ejecuta nodemon
+> This execute the mongo service, render react and run nodemon
 
-### forma 2:
+### way 2:
 `chmod 777 run`
 
-> Esto se hace por unica vez para darle permisos al archivo de bash script
+> This command runs the **way 1** command to give permissions to the bash script file
 
 `./run`
 
-> Este comando ejecutaría el comando de la **forma 1** de una forma más sencilla
+> This command would run the **way 1** command in a simple way
 
 ### forma 3:
-Los siguientes 3 comandos se ejecutarían en pestañas de consola diferentes 
-> NOTA: cabe aclarar que el comando de la **forma 1** resuelve el hecho de ejecutar estos comandos por separado para correr el proyecto:
+The following 3 commands would run in different console/terminal tabs
 
-`sudo service mongod restart` 
-> Este comando reinicia el servicio si esta activo y lo inicia si está apagado
+> NOTICE: The command of the ** way 1 ** solves the fact of run these commands separately to run the project:
+
+`sudo service mongod restart`
+
+> This comand restarts the service if it is active and start it if it is turned off
 
 `sudo webpack`
 
-> Este comando renderiza la vista, si requiere desarrollo en el front ejecutar `sudo webpack -w`
+> This command renders the view, if it's required to develop in frontend then run `sudo webpack -w`
 
 `sudo nodemon`
 
-> Este comando ejecuta el codigo del servidor
+> This command runs the server code
