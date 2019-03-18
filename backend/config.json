@@ -1,0 +1,18 @@
+{
+	"develop":{
+		"name": "develop",
+		"url": "",
+		"port": 3000,		
+		"db_url": "mongodb://localhost:27017/wuzazu",
+		"SECRET_TOKEN": "mysecrettoken",
+		"SECRET_SESSION": "mysecretsession"
+	},
+	"production":{
+		"name": "production",
+		"url": "",
+		"port": 3000,		
+		"db_url": "mongodb://localhost:27017/wuzazu",
+		"SECRET_TOKEN": "mysecrettoken",
+		"SECRET_SESSION": "mysecretsession"
+	}
+}
